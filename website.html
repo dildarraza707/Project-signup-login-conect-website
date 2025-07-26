@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopify Landing</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body{
+     background-color:rgb(170, 170, 247) ; 
+    }
+    #navbarSupportedContent ul {
+      font-size: 20px;
+      gap: 15px;
+      margin-right: 300px;
+    }
+    #navbarSupportedContent ul a {
+      transition: 0.6s all linear;
+      border-radius: 20px;
+    }
+    #navbarSupportedContent ul a:hover {
+      background-color: rgb(142, 150, 196);
+      border-radius: 20px;
+    }
+    .hero-text h1 {
+      font-size: 8vw;
+        font-family: KyivType Sans;
+font-weight: 500;
+font-style: Medium;
+font-size: 90px;
+
+line-height: 114.99999999999999%;
+letter-spacing: 0%;
+text-transform: uppercase;
+
+    }
+
+    @media (min-width: 800px) {
+      .hero-text h1 {
+        font-size: 50px;
+      }
+    }
+   .card{
+    overflow: hidden;
+   }
+    .card:hover {
+      transform: scale(1.05);
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      border: 1px solid #0056b3;
+    }
+
+    .card img {
+      transition: transform 0.3s ease;
+      
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+    .card h5 p{
+      z-index: 1;
+    } 
+  
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm" style="position: fixed;z-index: 1; top: 0; width: 100%;"data-aos="fade-down" data-aos-duration="3000">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="picture/logo shopify.png" alt="" width="210px" style="margin-left: 10px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav d-flex align-items-center">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#Featured Products">Featured Products</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#Customer Reviews">Customer Reviews</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#location">Location</a></li>
+        </ul>
+         <a href="index.html" class="btn btn-primary" style="margin-right: 30px;">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="container-fluid " style="margin-top: 170px; background-color: rgb(232, 231, 243); border-radius: 20px;" id="home">
+    <div class="row align-items-center">
+      <div class="col-lg-5 offset-1  col-md-12 hero-text text-center text-lg-start mb-4 mb-lg-0 " style="margin-top: 80px; padding: 20px;" data-aos="zoom-in" data-aos-duration="3000">
+        <h1 style="font-size: 64px; font-weight: 700; line-height: 1.2; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+          Shop the Best <br><span class="text-warning"><b>  Deals  on</b></span>
+         <br> Shopify Up to <span class="text-danger"><b>50% Off!</b></span>
+        </h1>
+      </div>
+      <div class="col-lg-6 offset- col-md-12 text-center" data-aos="fade-left" data-aos-duration="3000">
+        <img src="picture/sec pic.jpg" alt="Shopify Deals"  width="100%">
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid " style="margin-top: 100px; " >
+  <h2 class="text-center mb-4" style="font-size:50px ; font-family: Verdana, Geneva, Tahoma, sans-serif;" id="Featured Products">Featured Products</h2>
+  <hr style="border: 5px solid rgb(54, 54, 182);">
+  <div class="row g-4" style="margin-top: 50px;">
+    <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="picture/watch1.jfif" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Smart Watch</h5>
+          <p class="card-text">Latest model with fitness features.</p>
+          <p><strong>$99</strong></p>
+          <a href="#" class="btn btn-primary w-100">Buy Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat for more items -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="picture/airpod2.jfif" class="card-img-top" alt="Product 2">
+        <div class="card-body">
+          <h5 class="card-title">Airpod</h5>
+          <p class="card-text">Portable and powerful sound system.</p>
+          <p><strong>$49</strong></p>
+          <a href="#" class="btn btn-primary w-100">Buy Now</a>
+        </div>
+      </div>
+    </div>
+     <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="picture/cover1.jfif" class="card-img-top" alt="Product 2">
+        <div class="card-body">
+          <h5 class="card-title">Phone Cover</h5>
+          <p class="card-text">Protect your phone in style with this durable phone cover.</p>
+          <p><strong>$49</strong></p>
+          <a href="#" class="btn btn-primary w-100">Buy Now</a>
+        </div>
+  </div>
+</div>
+  </div>
+
+ <div class="container my-5">
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="picture/pic5.jfif" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Gurkha </h5>
+          <p class="card-text">Traditional Gurkha pants combining cultural elegance with comfort.</p>
+          <p><strong>$99</strong></p>
+          <a href="#" class="btn btn-primary w-100">Buy Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat for more items -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="picture/shose6.jfif" class="card-img-top" alt="Product 2">
+        <div class="card-body">
+          <h5 class="card-title">formal shoes</h5>
+          <p class="card-text">Elegant formal shoes perfect for office and events.</p>
+          <p><strong>$49</strong></p>
+          <a href="#" class="btn btn-primary w-100">Buy Now</a>
+        </div>
+      </div>
+    </div>
+     <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="picture/shose1.jfif" class="card-img-top" alt="Product 2">
+        <div class="card-body">
+          <h5 class="card-title">Nike </h5>
+          <p class="card-text">Comfortable Nike designed for everyday wear and running.</p>
+          <p><strong>$49</strong></p>
+          <a href="#" class="btn btn-primary w-100">Buy Now</a>
+        </div>
+  </div>
+</div>
+  </div>
+ </div>
+
+ <div class="container-fluid my-5">
+ 
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="picture/pic1.jfif" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Tracksuit</h5>
+          <p class="card-text">Sleek tracksuit for workouts or casual lounging.</p>
+          <p><strong>$99</strong></p>
+          <a href="#" class="btn btn-primary w-100">Buy Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat for more items -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="picture/pic4.jfif" class="card-img-top" alt="Product 2">
+        <div class="card-body">
+          <h5 class="card-title">T-shirt</h5>
+          <p class="card-text">Soft cotton t-shirt, ideal for daily wear.</p>
+          <p><strong>$49</strong></p>
+          <a href="#" class="btn btn-primary w-100">Buy Now</a>
+        </div>
+      </div>
+    </div>
+     <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="picture/cap1.jfif" class="card-img-top" alt="Product 2">
+        <div class="card-body">
+          <h5 class="card-title">Cap</h5>
+          <p class="card-text">Cool and comfortable cap to complete your outfit.</p>
+          <p><strong>$49</strong></p>
+          <a href="#" class="btn btn-primary w-100">Buy Now</a>
+        </div>
+  </div>
+</div>
+  </div>
+ </div>
+
+ <div class="container my-5">
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="picture/chapal1.jfif" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title"> slippers</h5>
+          <p class="card-text">Lightweight slippers for effortless comfort.</p>
+          <p><strong>$99</strong></p>
+          <a href="#" class="btn btn-primary w-100">Buy Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat for more items -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="picture/shose5.jfif" class="card-img-top" alt="Product 2">
+        <div class="card-body">
+          <h5 class="card-title">khusay</h5>
+          <p class="card-text">Traditional khusay handcrafted for cultural charm.</p>
+          <p><strong>$49</strong></p>
+          <a href="#" class="btn btn-primary w-100">Buy Now</a>
+        </div>
+      </div>
+    </div>
+     <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="picture/pic7.jfif" class="card-img-top" alt="Product 2">
+        <div class="card-body">
+          <h5 class="card-title">2-piece suit</h5>
+          <p class="card-text">Stylish 2-piece suit for a smart casual look.</p>
+          <p><strong>$49</strong></p>
+          <a href="#" class="btn btn-primary w-100">Buy Now</a>
+        </div>
+  </div>
+</div>
+  </div>
+ </div>
+ 
+<!-- Customer Reviews -->
+<div class="container-fluid my-5">
+  <h2 class="text-center mb-4" style="font-size: 50px;" id="Customer Reviews">Customer Reviews</h2>
+  <hr>
+  <div class="row g-4 mt-5">
+    <div class="col-md-6 ">
+      <div class="card p-3 shadow-sm h-100">
+        <div class="d-flex align-items-center mb-2">
+          <img src="picture/A (2).jpg" alt="Customer 1" class="rounded-circle me-3" width="50" height="50">
+          <div>
+            <h6 class="mb-0">Ayesha Khan</h6>
+            <small>Karachi, PK</small>
+          </div>
+        </div>
+        <p>"Great experience! The delivery was fast and product was exactly as described."</p>
+        <div class="text-warning">
+          ★★★★☆
+        </div>
+      </div>
+    </div>
+    <!-- More reviews -->
+    <div class="col-md-6">
+      <div class="card p-3 shadow-sm h-100">
+        <div class="d-flex align-items-center mb-2">
+          <img src="picture/A (1).jpg" alt="Customer 2" class="rounded-circle me-3" width="50" height="50">
+          <div>
+            <h6 class="mb-0">Ali Raza</h6>
+            <small>Lahore, PK</small>
+          </div>
+        </div>
+        <p>"Affordable and good quality products. Will shop again for sure!"</p>
+        <div class="text-warning">
+          ★★★★★
+        </div>
+      </div>
+    </div>
+     <div class="col-md-6 offset- mt-5">
+      <div class="card p-3 shadow-sm h-100">
+        <div class="d-flex align-items-center mb-2">
+          <img src="picture/A (3).jpg" alt="Customer 2" class="rounded-circle me-3" width="50" height="50">
+          <div>
+            <h6 class="mb-0">Kamran Khan</h6>
+            <small>Lahore, PK</small>
+          </div>
+        </div>
+        <p>"Affordable and good quality products. Will shop again for sure!"</p>
+        <div class="text-warning">
+          ★★★★★
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 offset- mt-5">
+      <div class="card p-3 shadow-sm h-100">
+        <div class="d-flex align-items-center mb-2">
+          <img src="picture/A (4).jpg" alt="Customer 2" class="rounded-circle me-3" width="50" height="50">
+          <div>
+            <h6 class="mb-0">Nadir Khan</h6>
+            <small>Lahore, PK</small>
+          </div>
+        </div>
+        <p>"Affordable and good quality products. Will shop again for sure!"</p>
+        <div class="text-warning">
+          ★★★★★
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mt-5">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <h1 style="font-size: 50px;" id="about">About Us</h1>
+      <hr>
+      <p style="font-size: 25px; margin-top: 20px;">
+        Welcome to <b>[Your Store Name]</b> – Where Quality Meets Passion!
+        <br><br>
+        At <b>[Your Store Name]</b>, we believe that shopping should be more than just a transaction — it should be an experience. Our journey began with a simple idea: to bring you high-quality, handpicked products that make your life easier, better, and a little more beautiful.
+        <br><br>
+        Whether you're looking for the latest trends, unique gifts, or everyday essentials, we've got something for everyone. Every item in our store is selected with care and tested for quality — because you deserve the best.
+      </p>
+    </div>
+
+    <div class="col-md-6 " style="margin-top: 90px;">
+      <video src="picture/about v.mp4" controls autoplay muted loop style="width: 100%; border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.2);"></video>
+    </div>
+  </div>
+</div>
+<div class="container contact-container " style="margin-top: 130px;">
+  <div class="row">
+    <h1 style="font-size: 50px; text-align: center; " id="contact">Contact</h1>
+    <hr>
+    <!-- Contact Form -->
+    <div class="col-md-6 mb-4 mt-5">
+      <h2 class="contact-title">Get in Touch</h2>
+      <form>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Subject" required>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Contact Info + Map -->
+    <div class="col-md-6  " style="margin-top: 70px;font-size: 25px;">
+      <h2 class="contact-title">Contact Info</h2>
+      <p><strong>Address:</strong>  Karachi, Pakistan</p>
+      <p><strong>Email:</strong> contact@yourstore.com</p>
+      <p><strong>Phone:</strong> +92 300 1234567</p>
+    </div>
+  </div>
+</div>
+
+    <div class="container-fluid" style="margin-top: 70px;">
+        <h1 style="font-size: 50px; text-align: center;" id="location">LOCATION</h1>
+      <div class="row mt-5" >
+        
+        
+      
+        
+        <div class="col-md-12">
+          <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.459502234785!2d67.00107811431997!3d24.861462984055878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f909f2e239d%3A0xf281de4b8758ef6e!2sKarachi%20Pakistan!5e0!3m2!1sen!2s!4v1623179576000!5m2!1sen!2s" 
+          width="100%" 
+          height="400pc" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-light pt-5 pb-4" style="margin-top: 80px;">
+  <div class="container text-md-left" >
+    <div class="row text-md-left">
+
+      <!-- Logo / About -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Your Store</h5>
+        <p>We provide the best deals, latest trends, and quality products to make your shopping experience memorable.</p>
+      </div>
+
+      <!-- Links -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Quick Links</h5>
+        <p><a href="#" class="text-light" style="text-decoration: none;">Home</a></p>
+        <p><a href="#" class="text-light" style="text-decoration: none;">Shop</a></p>
+        <p><a href="#" class="text-light" style="text-decoration: none;">About Us</a></p>
+        <p><a href="#" class="text-light" style="text-decoration: none;">Contact</a></p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Contact</h5>
+        <p><i class="fas fa-home mr-3"></i> Karachi, Pakistan</p>
+        <p><i class="fas fa-envelope mr-3"></i> support@yourstore.com</p>
+        <p><i class="fas fa-phone mr-3"></i> +92 300 1234567</p>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Subscribe</h5>
+        <form>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Your Email">
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </div>
+        </form>
+        <div class="mt-3">
+          <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="#" class="text-light"><i class="fab fa-youtube fa-lg"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Line -->
+    <hr class="mb-4 mt-4">
+    <div class="row align-items-center">
+      <div class="col-md-6 col-lg-8 offset-1" >
+        <p class="text-center text-md-center">© 2025 <strong>Your Store</strong>. All rights reserved.</p>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
